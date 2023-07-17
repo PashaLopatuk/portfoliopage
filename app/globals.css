@@ -25,3 +25,14 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.swiper-button-next::after {
+  color: white;
+}
+.swiper-button-prev::after {
+  color: white;
+}
+
+.swiper-pagination-bullet-active::after { 
+  color: lime;
+}
