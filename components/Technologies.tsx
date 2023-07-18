@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import gsap from 'gsap' 
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+
 gsap.registerPlugin(ScrollTrigger)
 
 import 'swiper/css'
@@ -25,7 +26,7 @@ const Technologies: React.FC<TechnologiesProps> = ({className}) => {
     
     useEffect(() => {
         const el = TechnologiesRef.current
-        gsap.fromTo(el, {color: 'black', opacity: '0%'}, {color: 'white', opacity: '100%',  duration: 3, scrollTrigger: {
+        gsap.fromTo(el, {color: 'black', opacity: '0%'}, {color: 'white', opacity: '100%',  duration: 2, scrollTrigger: {
             trigger: el,
             scrub: 1,
         }})
@@ -73,7 +74,7 @@ const technologies = [
     effect='cards'
     slidesPerView={1}
     navigation
-    className={className}
+    className={className+ 'text-black'}
     
     >
         {

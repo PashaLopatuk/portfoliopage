@@ -1,15 +1,12 @@
 'use client';
-import { twMerge } from 'tailwind-merge';
 
-import React from 'react'
+import React from 'react';
 
 interface BackgroundCirclesProps {
-    className?: string
-
+  className?: string;
 }
 
 const BackgroundCircles: React.FC<BackgroundCirclesProps> = ({ className }) => {
-  
   const words = [
     'developer',
     'div',
@@ -20,22 +17,27 @@ const BackgroundCircles: React.FC<BackgroundCirclesProps> = ({ className }) => {
     'html',
     'tailwind',
     'css'
-  ]
-  
-  return (
-    <div className={`${className} bg-gray-900 z-[100] fixed w-full h-full left-0 top-0 `}>
-      
-    {
-      words.map( (e) => 
-        <div className={twMerge(
-          'text-[', String(Math.floor(Math.random() * 10) * 30), 'px] absolute left-[', String(Math.floor(Math.random() * 100)), '%]top-[', String(Math.floor(Math.random() * 100)), '%]')} >
-          { e }
-        </div>
-      )
-    }
-        
-    </div>
-  )
-}
+  ];
 
-export default BackgroundCircles
+  return (
+    <div className={`${className} bg-gray-900 z-[100] fixed w-full h-full left-0 top-0`}>
+      <div className="text-[68px]">GOOGOGO</div>
+      {words.map((word) => (
+        <div
+          key={word}
+          className=
+          {`
+            text-[${Math.floor(Math.random() * 100)}%]
+            absolute
+            left-[${Math.floor(Math.random() * 100)}vw]
+            top-[${Math.floor(Math.random() * 100)}vh]
+          `}
+        >
+          {word}
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default BackgroundCircles;

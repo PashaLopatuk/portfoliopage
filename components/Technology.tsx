@@ -22,7 +22,7 @@ const Technology: React.FC<TechnologyProps> = ({
     className={className}
     modules={[ EffectFlip ]}
     >
-        <SwiperSlide className={'bg-lime-500 rounded-3xl w-full min-h-[500px] max-h-[500px] h-full p-5 flex justify-center'}>
+        <SwiperSlide className={'bg-lime-500 rounded-3xl w-full min-h-[500px]  h-full p-5 flex justify-center'}>
             <div className="flex flex-col items-center justify-end gap-8 min-h-full max-h-[500px] object-contain">
                 <h1 className='text-3xl font-semibold text-black '>
                     {label}

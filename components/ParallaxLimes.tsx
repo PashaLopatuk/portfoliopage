@@ -1,5 +1,6 @@
 import GlobalSvgSelector from "@/public/svg/GlobalSvgSelector"
 import MyMedias from "./MyMedias";
+import LinkItem from "./LinkItem";
 
 const ParallaxLimes = () => {
 
@@ -42,12 +43,14 @@ const ParallaxLimes = () => {
                     <div className="bg-lime-500 p-2.5 rounded-full">
                       <GlobalSvgSelector id={media.toLowerCase()} 
                         className="max-w-[56px] max-h-[56px] 
-                        w-full h-full m-3
+                        w-full h-full m-3 text-black
                         "
                       />
                     </div>
                     
-                    <h2 className="text-[100px] font-semibold">{media}</h2>
+                    <h2 className="text-[100px] font-semibold">
+                      <LinkItem className={''} content={media}/>
+                    </h2>
                   </a>
                 </li>
               )

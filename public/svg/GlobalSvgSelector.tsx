@@ -5,6 +5,8 @@ interface GlobalSvgSelectorProps {
 
 const GlobalSvgSelector: React.FC<GlobalSvgSelectorProps> = ({ id, className }) => {
     
+    // className = className + 'text-black';
+
     switch (id) {
         case '':
             return <></>

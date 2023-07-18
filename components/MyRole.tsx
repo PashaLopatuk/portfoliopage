@@ -37,7 +37,7 @@ const MyRole: React.FC<MyRoleProps> = ({ className }) => {
           myRoles.at(Math.random() * 3)
         } */}
 
-        <span className="bg-lime-300 text-xs mt-3 w-[160px] max-h-[7px] blur-lg absolute">gggggggg</span>
+        <span className="bg-lime-300 text-xs mt-7 w-[160px] max-h-[7px] blur-lg absolute">gggggggg</span>
 
         developer
     </span>
