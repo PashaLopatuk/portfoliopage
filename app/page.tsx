@@ -11,7 +11,7 @@ export default function Home() {
       {/* <BackgroundCircles /> */}
       <Header/>
       <Main />
-      <Footer/>
+      {/* <Footer/> */}
 
     </main>
   )
