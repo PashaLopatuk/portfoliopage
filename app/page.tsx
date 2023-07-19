@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center bg-gray-900">
       
-      {/* <BackgroundCircles /> */}
+      <BackgroundCircles />
       <Header/>
       <Main />
       {/* <Footer/> */}
