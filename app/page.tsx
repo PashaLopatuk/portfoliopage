@@ -6,7 +6,7 @@ import BackgroundCircles from '@/components/BackgroundCircles'
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center">
+    <main className="flex flex-col items-center bg-gray-900">
       
       {/* <BackgroundCircles /> */}
       <Header/>

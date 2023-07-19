@@ -28,7 +28,7 @@ const ParallaxLimes = () => {
   return (
     <div className="">
       
-      <div className="">
+      <div className=" overflow-hidden">
         <ul className="flex flex-col items-center gap-3">
             {
 

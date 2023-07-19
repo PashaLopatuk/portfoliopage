@@ -65,7 +65,7 @@ const technologies = [
         ref={TechnologiesRef}
         >
     <h1 
-    className="flex justify-center text-[60px] font-bold mb-10 space-x-2">
+    className="flex justify-center text-3xl md:text-6xl font-bold mb-10 space-x-2">
         Technologies &nbsp;
         <span className='text-gray-300 relative left-30'>I use</span>
     </h1>
