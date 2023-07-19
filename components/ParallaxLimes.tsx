@@ -26,34 +26,35 @@ const ParallaxLimes = () => {
   const iconSize = '56px';
 
   return (
-    <div className="">
+    <div className="my-[6em]">
       
       <div className=" overflow-hidden">
-        <ul className="flex flex-col items-center gap-3">
+        <ul className="flex flex-col items-end md:items-center gap-10">
             {
 
               medias.map( 
                 ({ media, link }) => 
 
-                <li className={`p-6 rounded-3xl ${
-                 ''  
-                }`}>
+                <li className={' rounded-3xl items-center focus:self-start'}>
 
-                  <a href={link} className="flex items-center content-center gap-4">
-                    <div className="bg-lime-500 p-2.5 rounded-full">
+                  <a href={link} 
+                  className="flex items-center gap-4 w-full ">
+                    
+                    <div className="bg-lime-500 p-2.5 rounded-full w-[5em] h-[5em] flex content-center items-center">
                       <GlobalSvgSelector id={media.toLowerCase()} 
-                        className="max-w-[56px] max-h-[56px] 
-                        w-full h-full m-3 text-black
-                        "
+                        className="text-black w-[4em] h-[4em] ml-[0.1em] "
                       />
                     </div>
                     
-                    <h2 className="text-[100px] font-semibold">
+                    <h2 className="lg:text-[5em] text-[5em] font-semibold">
                       <LinkItem className={''} content={media}/>
                     </h2>
+
                   </a>
+
                 </li>
               )
+
             }
         </ul>
       </div>

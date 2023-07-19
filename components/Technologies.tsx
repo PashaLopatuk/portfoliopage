@@ -83,7 +83,7 @@ const technologies = [
             }) => 
             <SwiperSlide>
                 <Technology className={
-                    'max-w-[500px]  max-h-full w-full h-full text-gray-800 '}
+                    'md:max-w-[500px]  md:max-h-full w-full h-full max-w-[90%]   text-gray-800 '}
                     image={image} label={label} text={text} color={color}
                 />
             </SwiperSlide>

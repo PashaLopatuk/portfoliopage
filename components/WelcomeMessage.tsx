@@ -9,11 +9,20 @@ const WelcomeMessage = () => {
 
     useEffect( () => {
         const el = MessageRef.current;
-        gsap.fromTo(el, {y: '30', opacity: 0}, { y: 0, opacity: 1, duration: .5 })
-    }, [])
+        animation(el)
+        }, [])
+
+    const animation = (el : any) => {
+        gsap.fromTo(el, {y: '40', opacity: 0}, { y: 0, opacity: 1, duration: .5 })
+    }
 
     return (
-        <h5 ref={MessageRef} className='opacity-0 text-s text-gray-200 transition'>Hello Everyone ✌️</h5>
+        <h5 
+        ref={MessageRef} 
+        onClick={() => animation(MessageRef.current)} 
+        className='opacity-0 text-s text-gray-200 transition'
+        >Hello Everyone ✌️
+        </h5>
     )
 }
 

@@ -21,7 +21,7 @@ const MyMedias = () => {
     <>
         <h1 
         ref={MyMediaRef}
-        className="text-center text-7xl md:text-[150px] mr-[-11px] text-right font-semibold">
+        className="text-right md:text-center text-7xl md:text-[7em] mr-[-11px] font-semibold">
             Check out <span className="text-lime-500">my</span> media's
         </h1>
     </>

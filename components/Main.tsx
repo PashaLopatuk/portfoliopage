@@ -25,14 +25,14 @@ const Main = () => {
 
 
   return (
-    <div className='z-20 grow shrink-0 p-3 w-full max-w-100 lg:max-w-[1024px]'>
+    <div className='z-20 grow shrink-0 md:p-3 w-full max-w-100 lg:max-w-[1024px]'>
         
         {/* <BackgroundCircles className={''}/> */}
         <UpButton className='hover:text-black z-20 transition fixed right-5 z-50 bottom-10 p-4 bg-lime-500 rounded-full text-black'/>
         
         <section className="z-20 bg-black pt-6 rounded-2xl">
             <div className="md:flex gap-[30px] mx-[20px]">
-                <div className="flex flex-col">
+                <div className="flex flex-col ">
                     <MyMainPhoto photos={photos}/>
                     <nav className=""></nav>
                 </div>
@@ -83,7 +83,7 @@ const Main = () => {
             
             <Technologies className='min-w-[0px] max-w-[800px] m-0'/>
         </section>
-        <section>
+        <section className='h-[100vh]'>
             <MyMedias />
             <ParallaxLimes/>
         </section>
