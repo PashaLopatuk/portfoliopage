@@ -31,7 +31,7 @@ const Main = () => {
         <UpButton className='hover:text-black z-20 transition fixed right-5 z-50 bottom-10 p-4 bg-lime-500 rounded-full text-black'/>
         
         <section className="z-20 bg-black pt-6 rounded-2xl">
-            <div className="md:flex gap-[30px] mx-[20px]">
+            <div className="md:flex gap-[30px] px-[20px]">
                 <div className="flex flex-col ">
                     <MyMainPhoto photos={photos}/>
                     <nav className=""></nav>
@@ -75,13 +75,13 @@ const Main = () => {
                     </div>
                 </div>
             </div>
-            <div className="mt-[50px] p-4 text-gray-300 transition hover:text-gray-200">
+            <div className="md:mt-[50px] p-4 text-gray-300 transition hover:text-gray-200">
             As a junior frontend developer studying in Ukraine, I am a passionate and dedicated individual who is eager to learn and grow in the ever-evolving field of web development. Currently pursuing my education at the university, I am equipped with a solid foundation in programming languages, web technologies, and design principles.
            </div>
         </section>
-        <section className="py-[20px] my-40  bg-black rounded-3xl flex flex-col items-center gap-10 max-w-95 overflow-hidden">
+        <section className="py-20 my-40  bg-black rounded-3xl flex flex-col items-center gap-10 max-w-95 overflow-hidden">
             
-            <Technologies className='min-w-[0px] max-w-[800px] m-0'/>
+            <Technologies className='min-w-[0px] max-h-[90vw] h-full  max-w-[90vw] md:max-w-[800px] m-0'/>
         </section>
         <section className='h-[100vh]'>
             <MyMedias />

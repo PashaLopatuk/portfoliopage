@@ -65,7 +65,7 @@ const technologies = [
         ref={TechnologiesRef}
         >
     <h1 
-    className="flex justify-center text-3xl md:text-6xl font-bold mb-10 space-x-2">
+    className="flex justify-center items-center text-3xl md:text-6xl font-bold mb-10 space-x-2">
         Technologies &nbsp;
         <span className='text-gray-300 relative left-30'>I use</span>
     </h1>
@@ -74,8 +74,7 @@ const technologies = [
     effect='cards'
     slidesPerView={1}
     navigation
-    className={className+ 'text-black'}
-    
+    className={className+ 'text-black flex content-center m-auto'}
     >
         {
             technologies.map(({
@@ -83,7 +82,7 @@ const technologies = [
             }) => 
             <SwiperSlide>
                 <Technology className={
-                    'md:max-w-[500px]  md:max-h-full w-full h-full max-w-[90%]   text-gray-800 '}
+                    'md:max-w-[500px]  max-h-full w-full min-h-full max-w-[90vw]   text-gray-800 bg-lime-500 hover:bg-lime-400 min-h-full w-full rounded-3xl  flex content-center items-center p-4 transition'}
                     image={image} label={label} text={text} color={color}
                 />
             </SwiperSlide>

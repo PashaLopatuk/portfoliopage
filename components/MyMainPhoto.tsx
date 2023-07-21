@@ -13,6 +13,8 @@ interface MyMainPhotoProps {
 
 const MyMainPhoto: React.FC<MyMainPhotoProps> = ({photos}) => {
 
+let slideNextPhoto = setInterval(() => {}, 3000);
+
   return (
     <div className="max-h-[400px] max-w-[300px] w-full h-full rounded-l-3xl rounded-r-full">
         

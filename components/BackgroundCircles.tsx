@@ -29,11 +29,14 @@ const BackgroundCircles: React.FC<BackgroundCirclesProps> = ({ className }) => {
   // console.log(margins)
 
   return (
-    <div className="fixed">
+    <div className="fixed blur-3xl">
       <img src="https://i.imgur.com/IyqCmlh.gif" alt="" 
-      className='object-cover min-w-[100vw] h-full blur-3xl'
+      className='object-cover min-w-[100vw] h-full blur-3xl '
       />
 
+      <img src="https://i.imgur.com/IyqCmlh.gif" alt="" 
+      className='object-cover min-w-[100vw] h-full blur-3xl '
+      />
     </div>
 
     // <div className={`${className} bg-gray-900 z-[100] fixed w-full h-full left-0 top-0`}>

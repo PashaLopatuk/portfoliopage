@@ -9,6 +9,7 @@ const MyMedias = () => {
 
     const MyMediaRef = useRef(null);
 
+    
     useEffect(() => {
       const el = MyMediaRef.current
       gsap.fromTo(el, {width: '0%'}, {width: '100%', scrollTrigger: {
@@ -16,6 +17,7 @@ const MyMedias = () => {
         // scrub: 1,
     }})
   }, [])
+
 
   return (
     <>

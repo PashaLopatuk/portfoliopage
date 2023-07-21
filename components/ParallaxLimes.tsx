@@ -40,13 +40,19 @@ const ParallaxLimes = () => {
                   <a href={link} 
                   className="flex items-center gap-4 w-full ">
                     
-                    <div className="bg-lime-500 p-2.5 rounded-full w-[5em] h-[5em] flex content-center items-center">
+                    <div className="bg-lime-500 p-2.5 rounded-full md:w-[5em] w-full h-[5em] flex content-center items-center">
                       <GlobalSvgSelector id={media.toLowerCase()} 
-                        className="text-black w-[4em] h-[4em] ml-[0.1em] "
+                        className="text-black w-[4em] h-[4em] ml-[0.1em]"
                       />
                     </div>
                     
-                    <h2 className="lg:text-[5em] text-[5em] font-semibold">
+                    <h2 className={`
+                    lg:text-[5em] 
+                    text-[4em] 
+                    md:text-[5em] 
+                    font-semibold
+                    
+                    `}>
                       <LinkItem className={''} content={media}/>
                     </h2>
 
