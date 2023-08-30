@@ -1,12 +1,9 @@
 'use client';
 
-import React, { useRef, useEffect } from 'react'
+import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import gsap from 'gsap' 
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-
-gsap.registerPlugin(ScrollTrigger)
+import s from './styles/Technologies.module.scss'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -22,15 +19,7 @@ interface TechnologiesProps {
 
 const Technologies: React.FC<TechnologiesProps> = ({className}) => {
   
-    const TechnologiesRef = useRef(null)
-    
-    useEffect(() => {
-        const el = TechnologiesRef.current
-        gsap.fromTo(el, {color: 'black', opacity: '0%'}, {color: 'white', opacity: '100%',  duration: 2, scrollTrigger: {
-            trigger: el,
-            scrub: 1,
-        }})
-    }, [])
+   
 
 
 const technologies = [
@@ -62,7 +51,7 @@ const technologies = [
   
     return (
         <div 
-        ref={TechnologiesRef}
+        className={s.technologies}
         >
     <h1 
     className="flex justify-center items-center text-3xl md:text-6xl font-bold mb-10 space-x-2">

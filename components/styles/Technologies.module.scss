@@ -1,0 +1,13 @@
+.technologies {
+    animation: technologies-fade 4s ease-in-out 0s 1;
+    animation-delay: calc(1500px - scroll-position-y);
+}
+
+@keyframes technologies-fade {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
