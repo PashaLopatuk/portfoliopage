@@ -81,7 +81,7 @@ const Main = () => {
         </section>
         <section className="py-20 my-40  bg-black rounded-3xl flex flex-col items-center gap-10 max-w-95 overflow-hidden">
             
-            <Technologies className='min-w-[0px] max-h-[90vw] h-full  max-w-[90vw] md:max-w-[800px] m-0'/>
+            <Technologies/>
         </section>
         <section className='h-[100vh]'>
             <MyMedias />

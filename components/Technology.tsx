@@ -39,16 +39,17 @@ const Technology: React.FC<TechnologyProps> = ({
     //     </SwiperSlide>
     // </Swiper>
     <div 
-    className={className+ ''} 
+    className='bg-lime-500 text-black flex items-center justify-center p-4 h-[26rem] w-full rounded-3xl'
+    // className='md:max-w-[500px]  max-h-full w-full min-h-full max-w-[90vw]   text-gray-800 bg-lime-500 hover:bg-lime-400 min-h-full w-full rounded-3xl  flex content-center items-center p-4 transition' 
     onClick={() => setbackShown(!backShown)}
     >
         {
             backShown ? 
-            <div className="min-h-full">
+            <div className="min-h-full text-2xl font-semibold p-2">
                 {text}
             </div>
             :
-            <div className="min-h-full flex flex-col items-center">
+            <div className="min-h-full flex flex-col items-center gap-5">
                 
                 <h1 className='text-3xl font-semibold text-black '>
                     {label}

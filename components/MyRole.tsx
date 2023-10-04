@@ -1,8 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef} from 'react'
-import { gsap } from 'gsap'
-
+import s from './styles/RoleShadow.module.scss'
 
 interface MyRoleProps {
   className ?: string
@@ -12,32 +11,36 @@ const MyRole: React.FC<MyRoleProps> = ({ className }) => {
 
   
   const myRoles: string[] = [
-    'developer', 'templater',
+    'developer', 'templater', 'designer'
   ]
   
-
-  const RoleSpanRef = useRef(null);
+  const [roleNow, setRoleNow] = React.useState<number>(0)
 
   useEffect(() => {
-    const el = RoleSpanRef.current
-    gsap.to(el, {
-      duration: 3,
-      text: {
-        value: 'developer',
-        delimiter: ' ',
-      },
-      repeat: -1,
-      yoyo: true,
-    })
+    const timer = setInterval( () => {
+      setRoleNow( (prev) => (prev + 1) % myRoles.length )
+    }, 3000)
+
+    return () => {
+      clearInterval(timer)
+    }
   }, [])
 
+  const RoleSpanRef = useRef<HTMLSpanElement | null>(null);
+
+  useEffect(() => {
+    if (RoleSpanRef.current) {
+      RoleSpanRef.current.innerHTML = myRoles[roleNow]
+    }
+  }, [roleNow])
+
   return (
-    <span ref={RoleSpanRef} className={`${className}`}> 
+    <span ref={RoleSpanRef} className={s.Role}> 
         {/* {
           myRoles.at(Math.random() * 3)
         } */}
 
-        <span className="bg-lime-300 text-xs mt-7 w-[160px] max-h-[7px] blur-lg absolute">gggggggg</span>
+        {/* <span className="bg-lime-300 text-xs mt-7 w-[160px] max-h-[7px] blur-lg absolute">gggggggg</span> */}
 
         developer
     </span>
